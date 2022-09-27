@@ -24,4 +24,53 @@ Main player is controlling Potter with arrow keys in order to reach diamond.Malf
 ### Install
 
 You need to have both g++ and ncurses installed on your machine.
++ Install `g++`
+
+      $ sudo apt-get install g++
+      
+    * Check `g++` version
+             
+            $ g++ --version
+              g++ (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0
+
++ Install `ncurses library`
+   
+      $ sudo apt-get install libncurses5-dev libncursesw5-dev
+    
+## Run
+
+In order to run this project execute all .cpp files and use lncurses command to include ncurses library to project.Then use executable app(exe) with map file to load maze in memory.
+
+```
+$ g++ -o exe *.cpp -lncurses
+./exe map.txt
+```
+
+I have also included Makefile in order to run program easily.Firstly install make command in your machine.
+
+```
+$ sudo apt install make
+```
+
+Then just run `make` command
+
+```
+$ make
+```
+
+In my machine i used Clion IDE for C++,if you want to install ncurses in Clion follow this <a href="https://e-l.unifi.it/pluginfile.php/805205/mod_resource/content/0/ncurses%20installation%20-%20en.pdf" target="_blank" >link.</a> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
